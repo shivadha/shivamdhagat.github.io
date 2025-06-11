@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shivam Dhagat | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+  <style>
+    #lang-switch {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      font-size: 0.9em;
+      color: white;
+    }
+    #lang-switch img {
+      width: 20px;
+      height: 14px;
+      cursor: pointer;
+      margin: 0 4px;
+    }
+    #tsparticles {
+      position: fixed;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background: #0a0a1e;
+    }
+  </style>
+</head>
+<body>
+  <div id="tsparticles"></div>
+
+  <header>
+    <nav>
+      <h1>Shivam Dhagat</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+	   <div id="lang-message"></div>
+      <div id="lang-switch">
+    <img src="https://flagcdn.com/w40/gb.png" onclick="changeLang('en')" alt="English" title="English">
+    <img src="https://flagcdn.com/w40/de.png" onclick="changeLang('de')" alt="German" title="German">
+    <img src="https://flagcdn.com/w40/fr.png" onclick="changeLang('fr')" alt="French" title="French">
+    <img src="https://flagcdn.com/w40/es.png" onclick="changeLang('es')" alt="Spanish" title="Spanish">
+  </div>
+
+    </nav>
+    <div class="hero">
+      <img src="shivam-profile.jpg" alt="Shivam Dhagat" />
+      <h2>Full Stack .NET Developer</h2>
+      <p>7+ years of experience | ASP.NET Core, MVC, Angular, SQL, AWS, Selenium</p>
+      <a href="ShivamDhagatEurCV.pdf" download class="btn">Download Resume</a>
+    </div>
+  </header>
+
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <div class="section-content">
+      <p>
+        I'm a passionate software engineer who speaks fluent C# and occasionally dreams in SQL joins. With 7+ years of experience building enterprise solutions using .NET Core, Angular, and cloud tech, I love turning coffee into clean, scalable code.<br><br>
+        Whether it's automating deployments or untangling legacy logic like a code archaeologist, I'm all about delivering reliable solutions — and maybe slipping in a dad joke or two while CI/CD pipelines run.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" data-aos="fade-up">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item">
+        <i class="fab fa-cuttlefish"></i>
+        <span>C#</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 0%;" data-width="90%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <i class="fas fa-code"></i>
+        <span>.NET Core</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 0%;" data-width="85%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <i class="fas fa-code"></i>
+        <span>ASP.NET MVC</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 0%;" data-width="85%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <i class="fas fa-code"></i>
+        <span>ASP.NET Web API</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 0%;" data-width="80%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-angular"></i>
+        <span>Angular</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 0%;" data-width="80%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <i class="fas fa-database"></i>
+        <span>SQL Server</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 0%;" data-width="85%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-aws"></i>
+        <span>AWS</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 0%;" data-width="75%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <i class="fas fa-robot"></i>
+        <span>Selenium</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 0%;" data-width="70%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-jenkins"></i>
+        <span>Jenkins</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 0%;" data-width="70%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-git-alt"></i>
+        <span>Git</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 0%;" data-width="80%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <i class="fas fa-globe"></i>
+        <span>English Proficiency</span>
+        <div class="progress-bar">
+          <div class="progress" style="width: 0%;" data-width="95%"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" data-aos="fade-up">
+    <h2>Education</h2>
+    <div class="section-content">
+      <div class="education-item">
+        <h3>Computer Science Engineering</h3>
+        <p>Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal, India</p>
+        <p>April 2014 – April 2018 | EQF Level 6</p>
+        <p><a href="https://www.rgpv.ac.in/Index.aspx" target="_blank">Visit RGPV Website</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" data-aos="fade-up">
+    <h2>My Career Track</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker">🏁</div>
+        <div class="timeline-date">2024–Present</div>
+        <div class="timeline-content">
+          <h3>Senior Software Engineer – Globant</h3>
+          <p>Working on enterprise solutions and automation with CI/CD & AWS.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker">🚗</div>
+        <div class="timeline-date">2022–2024</div>
+        <div class="timeline-content">
+          <h3>Senior Software Engineer – Cognizant</h3>
+          <p>Handled student lifecycle apps (SPS, RMS, TCC) using .NET MVC & Angular.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker">🚦</div>
+        <div class="timeline-date">2021–2022</div>
+        <div class="timeline-content">
+          <h3>System Engineer – TCS</h3>
+          <p>Developed & deployed internal tools with Jenkins and Selenium automation.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker">🛣️</div>
+        <div class="timeline-date">2020–2021</div>
+        <div class="timeline-content">
+          <h3>Programmer – InfoBeans</h3>
+          <p>Built modules for real estate systems and legal asset management.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker">🔧</div>
+        <div class="timeline-date">2018–2020</div>
+        <div class="timeline-content">
+          <h3>Software Engineer – Softude</h3>
+          <p>Started my journey with MVC, SQL, jQuery and Azure hosting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" data-modal="modal-rms">
+        <h3>📊 RMS – Resource Management System</h3>
+        <p>A web-based application to calculate and score students based on GPA, generating comprehensive academic reports for progression and decision-making.</p>
+        <span class="tags">C# · .NET · SQL Server · API Management · AWS</span>
+        <button class="project-btn">View Details</button>
+      </div>
+      <div class="project-card" data-modal="modal-sps">
+        <h3>📝 SPS – Survey Processing System</h3>
+        <p>An application to manage surveys among college students, collecting and analyzing feedback on academic and campus experiences, supporting both qualitative and quantitative data.</p>
+        <span class="tags">C# · .NET · SQL Server · Jenkins · AWS</span>
+        <button class="project-btn">View Details</button>
+      </div>
+      <div class="project-card" data-modal="modal-tcc">
+        <h3>🚚 TCC – Transport Cost Calculator</h3>
+        <p>Calculates transportation costs in real-time based on parameters like distance, weight, and cargo type, optimizing pricing and route planning for logistics businesses.</p>
+        <span class="tags">C# · .NET · SQL Server · Jenkins · AWS</span>
+        <button class="project-btn">View Details</button>
+      </div>
+      <div class="project-card" data-modal="modal-smd">
+        <h3>🚗 SMD – Vehicle Management Platform</h3>
+        <p>Barloworld platform for buying, selling, and servicing vehicles, supporting internal workflows and client interactions.</p>
+        <span class="tags">C# · ASP.NET Core · JavaScript · jQuery · JSON · AJAX · Jira</span>
+        <button class="project-btn">View Details</button>
+      </div>
+      <div class="project-card" data-modal="modal-serviscope">
+        <h3>🌐 Serviscope – Network Automation</h3>
+        <p>A network management solution to improve operational efficiency and automation, using CI/CD pipelines for streamlined deployments.</p>
+        <span class="tags">C# · ASP.NET MVC · Web APIs · MS SQL Server · AWS · Selenium (Java)</span>
+        <button class="project-btn">View Details</button>
+      </div>
+      <div class="project-card" data-modal="modal-iqvia">
+        <h3>🧾 IQVIA – Doctor Interaction Module</h3>
+        <p>A web application in the medical domain to facilitate interactions and meetings between doctors and pharmaceutical representatives.</p>
+        <span class="tags">C# · JavaScript · jQuery · JSON · AJAX · ASP.NET MVC</span>
+        <button class="project-btn">View Details</button>
+      </div>
+      <div class="project-card" data-modal="modal-real-estate">
+        <h3>🏠 Real Estate Portal</h3>
+        <p>A portal for listing, filtering, and managing property data with location search, featuring self-learning capabilities for improved user interaction.</p>
+        <span class="tags">C# · HTML · JavaScript · jQuery · JSON · AJAX</span>
+        <button class="project-btn">View Details</button>
+      </div>
+      <div class="project-card" data-modal="modal-veloz">
+        <h3>⚖️ Veloz Legal Lookup</h3>
+        <p>A user-friendly legal services web application to retrieve suburb information based on asset addresses, with comprehensive technical documentation.</p>
+        <span class="tags">C# · HTML · JavaScript · jQuery · JSON · AJAX</span>
+        <button class="project-btn">View Details</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="languages" data-aos="fade-up">
+    <h2>Languages</h2>
+    <div class="section-content">
+      <div class="language-item" data-tooltip="Mother Tongue">
+        <p><strong>Hindi:</strong> Mother Tongue</p>
+      </div>
+      <div class="language-item" data-tooltip="Proficient (C2 Level - Listening, Reading, Writing, Spoken Production, Spoken Interaction)">
+        <p><strong>English:</strong> Proficient (C2 Level)</p>
+      </div>
+      <div class="language-item" data-tooltip="Beginner (A1/A2 Level - Basic Understanding)">
+        <p><strong>Spanish:</strong> Beginner</p>
+      </div>
+      <div class="language-item" data-tooltip="Beginner (A1/A2 Level - Basic Understanding)">
+        <p><strong>Russian:</strong> Beginner</p>
+      </div>
+      <div class="language-item" data-tooltip="Beginner (A1/A2 Level - Basic Understanding)">
+        <p><strong>Portuguese:</strong> Beginner</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <div class="section-content">
+      <p><i class="fas fa-envelope"></i> Email: <a href="mailto:shivamdhagat1@gmail.com">shivamdhagat1@gmail.com</a></p>
+      <p><i class="fas fa-phone"></i> Phone: +91 7000853592</p>
+      <p><i class="fas fa-map-marker-alt"></i> Location: Pune, India</p>
+      <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/shivdhagat/" target="_blank">linkedin.com/in/shivdhagat</a></p>
+      <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/shivadha" target="_blank">github.com/shivadha</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Shivam Dhagat</p>
+  </footer>
+
+  <button id="back-to-top" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Modals for Projects -->
+  <div id="modal-rms" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>RMS – Resource Management System</h3>
+      <p>A web-based application to calculate and score students based on GPA, generating comprehensive academic reports for progression and decision-making.</p>
+      <p><strong>Technologies:</strong> C#, .NET, SQL Server, API Management, AWS</p>
+      <p><strong>Role:</strong> Senior Software Engineer at Globant</p>
+      <p><strong>Details:</strong> The system evaluates academic performance and generates detailed reports, helping students and institutions make informed decisions about academic progression.</p>
+    </div>
+  </div>
+  <div id="modal-sps" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>SPS – Survey Processing System</h3>
+      <p>An application to manage surveys among college students, collecting and analyzing feedback on academic and campus experiences, supporting both qualitative and quantitative data.</p>
+      <p><strong>Technologies:</strong> C#, .NET, SQL Server, Jenkins, AWS</p>
+      <p><strong>Role:</strong> Senior Software Engineer at Globant</p>
+      <p><strong>Details:</strong> SPS streamlines the collection and analysis of student feedback, providing valuable insights for improving academic and campus experiences.</p>
+    </div>
+  </div>
+  <div id="modal-tcc" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>TCC – Transport Cost Calculator</h3>
+      <p>Calculates transportation costs in real-time based on parameters like distance, weight, and cargo type, optimizing pricing and route planning for logistics businesses.</p>
+      <p><strong>Technologies:</strong> C#, .NET, SQL Server, Jenkins, AWS</p>
+      <p><strong>Role:</strong> Senior Software Engineer at Globant</p>
+      <p><strong>Details:</strong> TCC provides real-time cost estimates, helping logistics businesses optimize their pricing and routing strategies efficiently.</p>
+    </div>
+  </div>
+  <div id="modal-smd" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>SMD – Vehicle Management Platform</h3>
+      <p>Barloworld platform for buying, selling, and servicing vehicles, supporting internal workflows and client interactions.</p>
+      <p><strong>Technologies:</strong> C#, ASP.NET Core, JavaScript, jQuery, JSON, AJAX, Jira</p>
+      <p><strong>Role:</strong> System Engineer at TCS</p>
+      <p><strong>Details:</strong> The platform supports vehicle lifecycle management, from sales to servicing, with robust API services and internal workflow automation.</p>
+    </div>
+  </div>
+  <div id="modal-serviscope" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Serviscope – Network Automation</h3>
+      <p>A network management solution to improve operational efficiency and automation, using CI/CD pipelines for streamlined deployments.</p>
+      <p><strong>Technologies:</strong> C#, ASP.NET MVC, Web APIs, MS SQL Server, AWS, Selenium (Java)</p>
+      <p><strong>Role:</strong> Senior Software Engineer at Cognizant</p>
+      <p><strong>Details:</strong> Serviscope enhances network operations with automation, leveraging AWS for scalability and Selenium for testing efficiency.</p>
+    </div>
+  </div>
+  <div id="modal-iqvia" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>IQVIA – Doctor Interaction Module</h3>
+      <p>A web application in the medical domain to facilitate interactions and meetings between doctors and pharmaceutical representatives.</p>
+      <p><strong>Technologies:</strong> C#, JavaScript, jQuery, JSON, AJAX, ASP.NET MVC</p>
+      <p><strong>Role:</strong> Programmer at InfoBeans</p>
+      <p><strong>Details:</strong> The ITR Module improves communication in the medical domain by providing a seamless interface for scheduling and managing interactions.</p>
+    </div>
+  </div>
+  <div id="modal-real-estate" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Real Estate Portal</h3>
+      <p>A portal for listing, filtering, and managing property data with location search, featuring self-learning capabilities for improved user interaction.</p>
+      <p><strong>Technologies:</strong> C#, HTML, JavaScript, jQuery, JSON, AJAX</p>
+      <p><strong>Role:</strong> Web Application Developer at Softude</p>
+      <p><strong>Details:</strong> The portal enhances user experience with location-based search and self-learning features, making property management more intuitive.</p>
+    </div>
+  </div>
+  <div id="modal-veloz" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Veloz Legal Lookup</h3>
+      <p>A user-friendly legal services web application to retrieve suburb information based on asset addresses, with comprehensive technical documentation.</p>
+      <p><strong>Technologies:</strong> C#, HTML, JavaScript, jQuery, JSON, AJAX</p>
+      <p><strong>Role:</strong> Web Application Developer at Softude</p>
+      <p><strong>Details:</strong> Veloz Legal simplifies access to legal information with an intuitive interface and robust API integrations for suburb data retrieval.</p>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function changeLang(lang) {
+      document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+        el.innerText = el.getAttribute('data-' + lang);
+      });
+    }
+
+    let particlesInstance;
+
+    window.addEventListener("DOMContentLoaded", () => {
+      particlesInstance = tsParticles.load("tsparticles", {
+        fullScreen: { enable: false },
+        background: { color: "#0a0a1e" },
+        particles: {
+          number: { value: 150, density: { enable: true, value_area: 800 } },
+          color: { value: ["#ffffff", "#88aaff", "#ffaaee"] },
+          shape: { type: "circle" },
+          opacity: { value: 0.7, random: true, anim: { enable: true, speed: 1, opacity_min: 0.3 } },
+          size: { value: 2, random: true, anim: { enable: true, speed: 2, size_min: 0.5 } },
+          move: { enable: true, speed: 1.5, direction: "none", random: true, out_mode: "bounce" },
+          line_linked: { 
+            enable: true, 
+            distance: 100, 
+            color: "#ffffff", 
+            opacity: 0.3, 
+            width: 1 
+          }
+        },
+        interactivity: {
+          events: {
+            onhover: { enable: true, mode: ["grab", "bubble"] },
+            onclick: { enable: true, mode: "push" },
+            resize: true
+          },
+          modes: {
+            grab: { distance: 150, line_linked: { opacity: 0.7 } },
+            bubble: { distance: 200, size: 5, duration: 2, opacity: 0.8 },
+            push: { particles_nb: 5 }
+          }
+        },
+        retina_detect: true
+      });
+    });
+  </script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>
