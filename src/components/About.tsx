@@ -6,7 +6,7 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          I am a Team Lead and full-stack .NET developer with 7.8+ years of
+          I am a Team Lead and full-stack .NET developer with 8.5+ years of
           experience building enterprise applications. Currently at Publicis
           Resource, I lead developers across business-critical applications —
           from API-first backends in ASP.NET Core to Angular frontends — with a
